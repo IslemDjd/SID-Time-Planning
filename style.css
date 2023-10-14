@@ -41,7 +41,9 @@ td {
     text-align: center;
     padding: 8px;
     background-color: #f2f2f2;
-
+    :first-child{
+        color: red;
+    }
 }
 
 th {
