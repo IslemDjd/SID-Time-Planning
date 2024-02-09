@@ -1,76 +1,113 @@
-::-webkit-scrollbar{
-    display: none;
-}
-
 @font-face {
-    font-family: "MyFont1";
-    src: url(../font/Bellefair-Regular.ttf);
+  font-family: "font1";
+  src: url(font/Afacad-Regular.ttf);
 }
 
-@font-face {
-    font-family: "MyFont2";
-    src: url(../font/BarlowCondensed-Regular.ttf);
+::-webkit-scrollbar {
+  display: none;
 }
 
-body{
-    background: linear-gradient(to right, #334d50, #cbcaa5);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Myfont1";
+body {
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
 
-h2{
-    width: 30%;
-    margin:20px auto;
-    font-family: "MyFont1";
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
+.schedule {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 0fr);
+  gap: 1px;
 }
 
-table {
-    border-collapse: collapse;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 18px;
+.slot {
+  border: 1px solid black;
+  border-radius: 0.3em;
+  padding: 10px;
+  font-family: font1;
+  background-color: white;
 }
 
-td {
-    border: 1px solid black;
-    text-align: center;
-    padding: 8px;
-    background-color: #f2f2f2;
-    :first-child{
-        color: red;
-    }
+.head {
+  background-color: grey;
+  color: white;
 }
 
-th {
-    border: 1px solid black;
-    text-align: center;
-    padding: 8px;
-    background-color: #f2f2f2;
-    font-family: "MyFont2";
-
-
+.empty {
+  background-color: rgba(212, 212, 212, 0.646);
 }
 
-tr :first-child{
-    font-family: "MyFont2";
+.full {
+  text-align: center;
+
+  div {
+    background-color: rgb(254, 254, 230);
+    border-radius: 0.3em;
+    margin: 3px;
+  }
+}
+
+h1 {
+  font-family: font1;
+  color: white;
+  text-align: center;
+}
+
+.ia {
+  background-color: rgb(235, 235, 86);
+}
+
+.mob {
+  background-color: rgb(110, 160, 126);
+}
+
+.ssd {
+  background-color: rgb(233, 162, 162);
+}
+
+.secu {
+  background-color: rgb(237, 178, 140);
+}
+
+.sciw {
+  background-color: rgb(170, 234, 237);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  a{
+    text-decoration: none;
+    color: white;
+    font-family: font1;
     font-size: 20px;
+  }
+  a:hover {
+    color: aquamarine;
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .slot {
+    padding: 3px;
+    font-size: 10px;
+  }
 
-@media screen and (max-width: 550px) {
-    body{
-        background: linear-gradient(to bottom, #334d50, #cbcaa5);
-        background-attachment: fixed;
-    }
+  .schedule {
+    width: 100%;
+  }
 
-    h2{
-        width: 95%;
-        margin: 20% auto;
-    }
-    
+  body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }

@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G5 S6</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon/time.png" type="image/x-icon">
-    <title>Emploi Du Temps G5</title>
 </head>
+
 <body>
 
-<h2>Emploi Du Temps G5</h2>
+    <h1>G5 TIME PLANNING</h1>
 
-<table>
-    <tr>
-        <th>Time</th>
-        <th>Samedi</th>
-        <th>Dimanche</th>
-        <th>Lundi</th>
-        <th>Mardi</th>
-        <th>Mercredi</th>
-        <th>Jeudi</th>
-    </tr>
-    <tr>
-        <td>8:00 - 9:30</td>
-        <td style="background-color:  #80ffff;"><span>TD</span> <br> PL <br> <span>J8</span></td>
-        <td style="background-color: #ffaa00;"><span>COUR</span> <br> Comp <br> <span>A16</span></td>
-        <td></td>
-        <td style="background-color: #ff9f80;"><span>COUR</span> <br> IHM <br> <span>A16</span></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>9:45 - 11:15</td>
-        <td style="background-color: #ffaa00;"><span>TP</span> <br> Comp <br> <span>S3</span></td>
-        <td></td>
-        <td style="background-color: #ffaa00;"><span>TD</span> <br> Comp <br> <span>I10</span></td>
-        <td style="background-color: #99994d;"><span>TD</span> <br> PS <br> <span>I10</span></td>
-        <td style="background-color: #ffe680;"><span>COUR</span> <br> GL <br> <span>A16</span></td>
-        <td style="background-color: #99994d;"><span>COUR</span> <br> PS <br> <span>A16</span></td>
-    </tr>
-    <tr>
-        <td>11:30 - 13:00</td>
-        <td></td>
-        <td style="background-color:  #85e085;"><span>TD</span> <br> SE2 <br> <span>J17</span></td>
-        <td style="background-color:  #85e085;"><span>COUR</span> <br> SE2 <br> <span>A16</span></td>
-        <td style="background-color: #ffe680;"><span>TD</span> <br> GL <br> <span>J11</span></td>
-        <td style="background-color:  #85e085;"><span>TP</span> <br> SE2 <br> <span>S4(MI)</span></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>13:00 - 14:00</td>
-        <td>Break</td>
-        <td>Break</td>
-        <td style="background-color: #ff9f80;"><span>TP & TD</span></td>
-        <td>Break</td>
-        <td>Break</td>
-        <td>Break</td>
-    </tr>
-    <tr>
-        <td>14:00 - 15:30</td>
-        <td></td>
-        <td></td>
-        <td style="background-color: #ff9f80;">IHM <br> <span>J4</span></td>
-        <td style="background-color:  #80ffff;"><span>COUR</span> <br> PL <br> <span>A16</span></td>
-        <td style="background-color: #ffe680;"><span>TP</span> <br> GL <br> <span>S5</span></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>15:45 - 17:15</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
+    <div class="schedule">
+        <div class="slot head">Time</div>
+        <div class="slot head">Sunday</div>
+        <div class="slot head">Monday</div>
+        <div class="slot head">Tuesday</div>
+        <div class="slot head">Wednesday</div>
+        <div class="slot head">Thursday</div>
 
-<br><br><br><br><br>
+        <div class="slot head">08:00 - 09:30</div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot full ia">
+            <div>Cour</div>
+            <div>IA</div>
+            <div>Bahi / A16</div>
+        </div>
+        <div class="slot"></div>
 
-</body>
-<script src="main.js"></script>
+        <div class="slot head">09:45 - 11:15</div>
+        <div class="slot full ia">
+            <div>TP</div>
+            <div>IA</div>
+            <div>Allalga / MI1</div>
+        </div>
+        <div class="slot"></div>
+        <div class="slot full mob">
+            <div>Cour</div>
+            <div>MOB APP</div>
+            <div>Ghazi / A16</div>
+        </div>
+        <div class="slot full sciw">
+            <div>TD</div>
+            <div>SCIW</div>
+            <div>Souici / S.Conf</div>
+        </div>
+        <div class="slot full ssd">
+            <div>Cour</div>
+            <div>SSD</div>
+            <div>Sari / A16</div>
+        </div>
+
+        <div class="slot head">11:30 - 13:00</div>
+        <div class="slot"></div>
+        <div class="slot full secu">
+            <div>Cour</div>
+            <div>SECU</div>
+            <div>Ghoualmi / A16</div>
+        </div>
+        <div class="slot full secu">
+            <div>TD</div>
+            <div>SECU</div>
+            <div>Rahal / J12</div>
+        </div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+
+        <div class="slot head">Break</div>
+        <div class="slot empty"></div>
+        <div class="slot empty"></div>
+        <div class="slot empty"></div>
+        <div class="slot empty"></div>
+        <div class="slot empty"></div>
+
+        <div class="slot head">14:00 - 15:30</div>
+        <div class="slot"></div>
+        <div class="slot full ssd">
+            <div>TP</div>
+            <div>SSD</div>
+            <div>Khetatba / MI1</div>
+        </div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot full mob">
+            <div>TP</div>
+            <div>MOB APP</div>
+            <div> / MI1</div>
+        </div>
+
+        <div class="slot head">15:45 - 17:15</div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+        <div class="slot"></div>
+    </div>
+    <br><br><br>
+
+    <footer><a href="https://drive.google.com/file/d/1qx9jZIprPSyKLYYRTRGTqFFCPaFhU9SJ/view">See Original</a></footer>
+
+</body> 
+
 </html>
