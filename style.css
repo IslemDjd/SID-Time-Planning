@@ -20,6 +20,11 @@ body {
   gap: 1px;
 }
 
+.cour{
+  color: red;
+  font-weight: 700;
+}
+
 .slot {
   border: 1px solid black;
   border-radius: 0.3em;
