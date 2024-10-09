@@ -20,7 +20,7 @@ body {
   gap: 1px;
 }
 
-.cour{
+.cour {
   color: red;
   font-weight: 700;
 }
@@ -48,7 +48,9 @@ body {
   div {
     background-color: rgb(254, 254, 230);
     border-radius: 0.3em;
+    /* border: 1px solid black; */
     margin: 3px;
+    padding: 2px;
   }
 }
 
@@ -58,31 +60,43 @@ h1 {
   text-align: center;
 }
 
-.ia {
-  background-color: rgb(235, 235, 86);
-}
-
-.mob {
-  background-color: rgb(110, 160, 126);
-}
-
-.ssd {
-  background-color: rgb(233, 162, 162);
-}
-
-.secu {
-  background-color: rgb(237, 178, 140);
-}
-
 .sciw {
-  background-color: rgb(170, 234, 237);
+  background-color: #fee041;
+}
+
+.english {
+  background-color: #cae594;
+}
+
+.data-analysis {
+  background-color: #7dd2cd;
+}
+
+.adv-prg-tech {
+  background-color: #bed8bd;
+}
+
+.comp-prb-sol {
+  background-color: #fdb9b0;
+}
+
+.web-sem-web {
+  background-color: #dbd8ad;
+}
+
+.serv-or-arch {
+  background-color: #f2d5b3;
+}
+
+.dec-aid-sys {
+  background-color: #cce7f0;
 }
 
 footer {
   display: flex;
   justify-content: center;
 
-  a{
+  a {
     text-decoration: none;
     color: white;
     font-family: font1;
@@ -103,16 +117,17 @@ footer {
     width: 100%;
   }
 
+  .full{
+    /* min-width: 4rem; */
+    /* max-width: fit-content; */
+    width: 90%;
+    margin: 0 auto
+  }
+
   body {
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
     background-size: cover;
     background-attachment: fixed;
   }
 
-  footer{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
-  }
 }
