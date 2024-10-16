@@ -25,6 +25,16 @@ body {
   font-weight: 700;
 }
 
+.tp {
+  color:rgb(0, 213, 128);
+  font-weight: 700;
+}
+
+.td {
+  color:rgb(36, 178, 185);
+  font-weight: 700;
+}
+
 .slot {
   border: 1px solid black;
   border-radius: 0.3em;
